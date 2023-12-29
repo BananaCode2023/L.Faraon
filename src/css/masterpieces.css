@@ -1,0 +1,133 @@
+.masterpieces{
+  padding: 88px 0 24px;
+}
+.masterpieces-heading .heading{
+  font-size: var(--title2);
+  text-align: center;
+}
+.masterpieces-swiper .swiper-slide{
+  padding: 24px 16px;
+}
+.masterpieces-swiper .swiper-slide .art-container{
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 24px 16px;
+  box-shadow: var(--penumbra);
+  max-width: 288px;
+  margin-inline: auto;
+  
+
+  .gallery-swiper-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+      font-size: var(--body1);
+      margin-block: 24px;
+    }
+    .gallery-swiper-btns{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}
+.gallery-swiper-img{
+  display: flex;
+  align-items: center;
+  height: 387px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.gallery-swiper-img:hover{
+  opacity: 0.9;
+}
+.gallery-swiper-img img{
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .masterpieces-heading .heading{
+    margin-block: 24px;
+    font-size: var(--heading2);
+  }
+  .masterpieces-swiper .swiper-slide .art-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    padding: 32px;
+    max-width: 688px;
+  
+    .gallery-swiper-content{
+      justify-content: center;
+  
+      .title{
+        font-size: var(--title2);
+        margin-block: 32px;
+      }
+      .gallery-swiper-btns{
+        flex-direction: row;
+      }
+    }
+  }
+  .gallery-swiper-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  .gallery-swiper-img img{
+    height: initial;
+    width: initial;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .gallery-swiper-content{
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .masterpieces-swiper .swiper-slide .art-container{
+    max-width: 888px;
+   
+    .gallery-swiper-content{
+      justify-content: center;
+  
+      .title{
+        font-size: var(--title2);
+        margin-block: 32px;
+      }
+      .gallery-swiper-btns{
+        flex-direction: row;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .masterpieces-heading .heading{
+    margin-block: 48px;
+    font-size: var(--heading1);
+  }
+  .masterpieces-swiper .swiper-slide .art-container{
+    max-width: 1024px;
+   
+    .gallery-swiper-content{
+      justify-content: center;
+  
+      .title{
+        font-size: var(--title1);
+      }
+      .gallery-swiper-btns{
+        flex-direction: row;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .masterpieces-swiper .swiper-slide .art-container{
+    max-width: 1280px;
+   
+    }
+}

@@ -1,0 +1,12 @@
+.heading{
+  font-family: var(--heading-font);
+  font-size: var(--heading2);
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+@media screen and (min-width: 1024px) {
+  .heading{
+    font-size: var(--heading1);
+  }
+}

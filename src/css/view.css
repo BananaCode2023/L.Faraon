@@ -1,0 +1,49 @@
+.view-overlay{
+  position: fixed;
+  background-color: rgba(36, 38, 41, 0.882);
+  z-index: 101;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: auto;
+}
+.view-container img{
+  width: 100%;
+  height: initial;
+}
+.view-container button{
+  width: 32px;
+  height: 32px;
+  padding-block: 3px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: -64px;
+  margin-left: 16px;
+  position: fixed;
+  z-index: 2;
+  background-color: #ffffffa7;
+  border-radius: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  svg{
+    color: var(--neutral);
+  }
+}

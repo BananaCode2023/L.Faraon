@@ -1,0 +1,69 @@
+:root{
+  /* COLOR TEMPLATE */
+  --primary: #293647;
+  --primary-container: #ACB7DA;
+  --secondary: #473A29;
+  --secondary-container: #ECCEA8;
+  --surface: #E7EBEA;
+  --neutral: #242629;
+
+  /* FONT FAMILIES */
+  --heading-font: 'Cinzel';
+  --title-font: 'Quattrocento';
+  --body-font: 'Lora';
+  --light-font: 'Lato';
+
+  /* FONT SIZES */
+  --heading1: 56px;
+  --heading2: 48px;
+  --title1: 40px;
+  --title2: 32px;
+  --body1: 18px;
+  --body2: 16px;
+  --light: 14px;
+
+  /* TYPOGRAPHY SETTINGS */
+  --display-letter-space: 5%;
+  --body-line-height: 29px;
+
+  /* MEDIA QUERIES */
+  --mobile: 420px;
+  --small-tablet: 768px;
+  --tablet: 1024px;
+  --small-desktop: 1280px;
+  --desktop: 1440px;
+
+  /* SHADOW */
+  --penumbra: 0 6px 30px 5px rgba(0,0,0,0.12);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  font-size: var(--body1);
+}
+a{
+  text-decoration: none;
+}
+svg{
+  font-size: 24px;
+}
+.main-container{
+  max-width: 1440px;
+  margin-inline: auto;
+  box-shadow: var(--penumbra);
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background: var(--surface);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background: var(--primary);
+  border-radius: 8px;
+}
